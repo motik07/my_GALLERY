@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery_css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./gallery_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>MOITI'S gallery</title>
+    <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <!--! HEADER !-->
+        <header>
+                <div class="sider-btn-place" id="id_sider_btn"><strong>&#8801;</strong></div>
+                <div class="header-content">
+                  <div class="top-headline">
+                    <h1 class="karantina t-shadow">מוטי</h1>
+                    <lord-icon src="https://cdn.lordicon.com/szoiozyr.json" trigger="loop" delay="2500" style="width:50px; height:50px"></lord-icon>
+                    <h1 class="karantina t-shadow">עובד</h1>
+                  </div>
+                    <div class="header-manu">
+                        <nav>
+                          <ul>
+                            <li><a href="../../index.html" rel="noopener noreferrer">חזרה למסך הבית</a></li>
+                            <li><a href="../../index.html#contact_id" rel="noopener noreferrer">יצירת קשר</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </header>
+            <!--! MAIN!-->
+            <main>
+              <aside id="sider_id">
+                <div class="sider-manu">
+                  <nav>
+                    <ul>
+                      <li><a href="../../index.html" rel="noopener noreferrer">▶ חזרה למסך הבית</a></li>
+                      <li><a href="../../index.html#contact_id" rel="noopener noreferrer">▶ יצירת קשר</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </aside>
+              <div class="select-place">
+                <select id="select_countries_id" onchange="selectCountriesFunc()">
+                  <option value="defaule">chose capital countries gallery...</option>
+                  <option value="israel">israel jerusalem</option>
+                  <option value="austria">austria vienna</option>
+                  <option value="czech">czech republic prague</option>
+                  <option value="italy">italy rome</option>
+                  <option value="japan">japan tokyo</option>
+                  <option value="thailand">thailand bangkok</option>
+                </select>
+              </div>
+              
+              <div class="small-gallery"  id="israel_gallery">
+                <img onclick="chosePic(0)" src="countrys_picturs/israel_jerusalem/jerusalem1.jpg" alt="jerusalem"/>
+                <img onclick="chosePic(1)" src="countrys_picturs/israel_jerusalem/jerusalem2.jpg" alt="jerusalem"/>
+                <img onclick="chosePic(2)" src="countrys_picturs/israel_jerusalem/jerusalem3.jpg" alt="jerusalem"/>
+                <img onclick="chosePic(3)" src="countrys_picturs/israel_jerusalem/jerusalem4.jpg" alt="jerusalem"/>
+                <img onclick="chosePic(4)" src="countrys_picturs/israel_jerusalem/jerusalem5.jpg" alt="jerusalem"/>
+                <img onclick="chosePic(5)" src="countrys_picturs/israel_jerusalem/jerusalem6.jpg" alt="jerusalem"/>
+              </div>
+              <div class="small-gallery"  id="austria_gallery">
+                    <img onclick="chosePic(0)" src="countrys_picturs/austria_vienna/vienna1.jpg" alt="vienna"/>
+                    <img onclick="chosePic(1)" src="countrys_picturs/austria_vienna/vienna2.jpg" alt="vienna"/>
+                    <img onclick="chosePic(2)" src="countrys_picturs/austria_vienna/vienna3.jpg" alt="vienna"/>
+                    <img onclick="chosePic(3)" src="countrys_picturs/austria_vienna/vienna4.jpg" alt="vienna"/>
+                    <img onclick="chosePic(4)" src="countrys_picturs/austria_vienna/vienna5.jpg" alt="vienna"/>
+                    <img onclick="chosePic(5)" src="countrys_picturs/austria_vienna/vienna6.jpg" alt="vienna"/>
+                  </div>
+                  <div class="small-gallery"  id="czech_gallery">
+                    <img onclick="chosePic(0)" src="countrys_picturs/czech_republic_prague/prague1.jpg" alt="prague"/>
+                    <img onclick="chosePic(1)" src="countrys_picturs/czech_republic_prague/prague2.jpg" alt="prague"/>
+                    <img onclick="chosePic(2)" src="countrys_picturs/czech_republic_prague/prague3.jpg" alt="prague"/>
+                    <img onclick="chosePic(3)" src="countrys_picturs/czech_republic_prague/prague4.jpg" alt="prague"/>
+                    <img onclick="chosePic(4)" src="countrys_picturs/czech_republic_prague/prague5.jpg" alt="prague"/>
+                    <img onclick="chosePic(5)" src="countrys_picturs/czech_republic_prague/prague6.jpg" alt="prague"/>
+                  </div>
+                  <div class="small-gallery"  id="japan_gallery">
+                    <img onclick="chosePic(0)" src="countrys_picturs/japan_tokyo/tokyo1.jpg" alt="tokyo"/>
+                    <img onclick="chosePic(1)" src="countrys_picturs/japan_tokyo/tokyo2.jpg" alt="tokyo"/>
+                    <img onclick="chosePic(2)" src="countrys_picturs/japan_tokyo/tokyo3.jpg" alt="tokyo"/>
+                    <img onclick="chosePic(3)" src="countrys_picturs/japan_tokyo/tokyo4.jpg" alt="tokyo"/>
+                    <img onclick="chosePic(4)" src="countrys_picturs/japan_tokyo/tokyo5.jpg" alt="tokyo"/>
+                    <img onclick="chosePic(5)" src="countrys_picturs/japan_tokyo/tokyo6.jpg" alt="tokyo"/>
+                  </div>
+                  <div class="small-gallery"  id="thailand_gallery">
+                    <img onclick="chosePic(0)" src="countrys_picturs/thailand_bangkok/bangkok1.jpg" alt="bangkok"/>
+                    <img onclick="chosePic(1)" src="countrys_picturs/thailand_bangkok/bangkok2.jpg" alt="bangkok"/>
+                    <img onclick="chosePic(2)" src="countrys_picturs/thailand_bangkok/bangkok3.jpg" alt="bangkok"/>
+                    <img onclick="chosePic(3)" src="countrys_picturs/thailand_bangkok/bangkok4.jpg" alt="bangkok"/>
+                    <img onclick="chosePic(4)" src="countrys_picturs/thailand_bangkok/bangkok5.jpg" alt="bangkok"/>
+                    <img onclick="chosePic(5)" src="countrys_picturs/thailand_bangkok/bangkok6.jpg" alt="bangkok"/>
+                  </div>
+                  <div class="small-gallery"  id="italy_gallery">
+                    <img onclick="chosePic(0)" src="countrys_picturs/italy_rome/rome1.jpg" alt="rome"/>
+                    <img onclick="chosePic(1)" src="countrys_picturs/italy_rome/rome2.jpg" alt="rome"/>
+                    <img onclick="chosePic(2)" src="countrys_picturs/italy_rome/rome3.jpg" alt="rome"/>
+                    <img onclick="chosePic(3)" src="countrys_picturs/italy_rome/rome4.jpg" alt="rome"/>
+                    <img onclick="chosePic(4)" src="countrys_picturs/italy_rome/rome5.jpg" alt="rome"/>
+                    <img onclick="chosePic(5)" src="countrys_picturs/italy_rome/rome6.jpg" alt="rome"/>
+                  </div>
+                  <div class="content-B">
+                    <div class="description-text-place t-shadow">
+                      <h4 id="pic_description_id">welcome to countries galley!</h4>
+                    </div>
+                  </div>
+                  <div class="content-A"  id="main_picture_id">
+                    <button id="button_next" class="button" onclick="nextJpics()">◁</button>
+                    <button id="button_back" class="button" onclick="backJpics()">▷</button>
+                  </div>
+                </main>
+                <footer>
+                  <small>!הזכויות שמורות: למוטי עובד</small>
+                </footer>
+              </div>
+            </div>
+            <script defer src="gallery_js/script.js"></script>
+          </body>
+          </html>
